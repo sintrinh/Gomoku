@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/holo_orange_light">
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NewGame"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@android:color/holo_blue_dark"/>
+        <LinearLayout
+            android:background="#fc615a"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Turn of:"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvTurn"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Click Newgame to play"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linBoardGame"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f9caca"
+        android:layout_below="@+id/linMenu">
+
+    </LinearLayout>
+
+</RelativeLayout>
